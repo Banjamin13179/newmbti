@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MBTI 검사</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>MBTI 검사</h1>
+    <form id="mbtiForm">
+        <div id="questions">
+            <p>1. 새로운 사람을 만나는 것이 즐겁다.</p>
+            <label>
+                <input type="radio" name="question_0" value="1" required> 예
+            </label>
+            <label>
+                <input type="radio" name="question_0" value="0"> 아니오
+            </label>
+
+            <p>2. 계획을 세우는 것이 좋다.</p>
+            <label>
+                <input type="radio" name="question_1" value="1" required> 예
+            </label>
+            <label>
+                <input type="radio" name="question_1" value="0"> 아니오
+            </label>
+
+            <p>3. 감정보다 사실을 더 중요하게 생각한다.</p>
+            <label>
+                <input type="radio" name="question_2" value="1" required> 예
+            </label>
+            <label>
+                <input type="radio" name="question_2" value="0"> 아니오
+            </label>
+
+            <p>4. 여러 사람과 함께 있는 것을 선호한다.</p>
+            <label>
+                <input type="radio" name="question_3" value="1" required> 예
+            </label>
+            <label>
+                <input type="radio" name="question_3" value="0"> 아니오
+            </label>
+        </div>
+        <br>
+        <button type="button" onclick="calculateMBTI()">결과 보기</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
